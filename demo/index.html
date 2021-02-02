@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DG ODS display demo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700');
+
+        @font-face {
+            font-family: "gent-icons-v4";
+            src: url('https://bartdelrue.github.io/gent-icons.woff2') format('woff2'),
+            url('https://bartdelrue.github.io/gent-icons.woff') format('woff');;
+        }
+
+        html {
+            font: 400 20px 'Fira Sans', sans-serif;
+        }
+
+        body {
+            font-size: .8rem;
+        }
+    </style>
+</head>
+<body>
+
+<script src="https://bartdelrue.github.io/dg-druktemeter-info.min.js"></script>
+
+<dg-druktemeter-info></dg-druktemeter-info>
+<dg-druktemeter-info reset="true" heading="Reset naald na elke fetch"></dg-druktemeter-info>
+<dg-druktemeter-info value="54" heading="Vaste waarde: 54"></dg-druktemeter-info>
+<dg-druktemeter-info dataset="develop" timeout="5000" reset="true" heading="random waarde elke 5 seconden + reset naald"></dg-druktemeter-info>
+<dg-druktemeter-info color="rgba(255,244,244,1)" shadow="rgba(255,75,75,1)" heading="custom kleuren"></dg-druktemeter-info>
+<dg-druktemeter-info theme="cs--green" heading="Stijlgids kleurenschema cs--green"></dg-druktemeter-info>
+
+</body>
+</html>
